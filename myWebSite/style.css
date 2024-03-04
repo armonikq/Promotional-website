@@ -1,0 +1,136 @@
+body{
+    background-color: #3F474C;
+
+}
+.container{
+    width: 70%;
+
+}
+
+.nav-item.products{
+    color: white;
+}
+.nav-item.products:hover{
+   color: black !important;
+}
+.nav-link{
+    color : white;
+}
+.nav-item.pro{
+    color :white;
+}
+.nav-link.pro:hover{
+       color:  black !important;
+}
+
+
+
+.border-1{
+    border-radius: 10px;
+}
+
+.border-2{
+  border-style: solid;
+    border-color: white;
+    width: 80%;
+    height: 420px;
+    border-radius: 7px;
+   margin-left: 100px;
+
+}
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    z-index: 999;
+}
+@media (max-width:768px) {
+    .container .open{display:block;}
+    .container ul {display:none;}
+    .container ul li{float:none; margin-right:0; border-bottom:1px solid #333}
+    .container ul li:last-child{border-bottom:none}
+}
+@media (max-width:768px) {
+    .container ul {display:block;}
+}
+
+@media (max-width : 768px){
+    .menu .open{display: none;}
+}
+
+
+/* Büyük ekranlar için stil tanımları */
+@media (min-width: 769px) {
+    .navbar-collapse {
+        display: flex !important; /* Büyük ekranlarda menüyü flex olarak göster */
+         ;/* Menüyü dikey olarak ortala */
+
+    }
+    .navbar-toggler {
+        display: none; /* Büyük ekranlarda hamburger düğmesini gizle */
+    }
+    .navbar-nav {
+        flex-direction: row;
+        align-items: center; /* Menüyü yatayda ortala */
+    }
+    .nav-item {
+        margin: 0 0.5rem; /* Menü öğeleri arasındaki boşluğu ayarla */
+    }
+    .navbar-brand {
+        margin-right: auto; display: block ; !important;/* AyhanOnline markasını menünün sol tarafına sabitle */
+    }
+    .navbar-brand,
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        display: block;
+    }
+}
+
+/* Küçük ekranlar için stil tanımları */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: flex !important; /* Küçük ekranlarda hamburger düğmesini göster */
+        align-items: center; /* Hamburger düğmesini dikeyde ortala */
+    }
+    .navbar-collapse {
+        display: none; /* Küçük ekranlarda menüyü gizle */
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Menüyü dikeyde başlangıca hizala */
+    }
+    .nav-item {
+        margin: 0.5rem 0; /* Menü öğeleri arasındaki boşluğu ayarla */
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+    }
+    .navbar-collapse.show {
+        display: block; /* Hamburger düğmesi tıklandığında menüyü göster */
+    }
+    .logo{
+        display: none;
+    }
+}
+
+
+.logo {
+    background-color: #3E474C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
